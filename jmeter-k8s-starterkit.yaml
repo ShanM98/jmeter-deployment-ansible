@@ -1,10 +1,6 @@
 - name: PlayBook for Installation of Jmeter in K8S
   hosts: localhost
   tasks:
-    - name: Find out playbook's path
-      shell: pwd
-      register: file_path
-    - debug: var=file_path.stdout
     - name: Extract the files
       unarchive:
         src: ./jmeter-k8s-starterkit.zip
