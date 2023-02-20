@@ -1,0 +1,14 @@
+- name: PlayBook for Installation of Jmeter in K8S
+  hosts: jmeter
+  tasks:
+    - name: Copy file with owner and permissions
+      copy:
+        src: ./jmeter-k8s-starterkit.zip
+        dest: .
+    - name: Extract the files
+      unarchive:
+        src: ./jmeter-k8s-starterkit.zip
+        dest: .
+        remote_src: True
+    - name: Deploying Jmeter K8s Objects
+      shell: kubectl create -R -f ./jmeter-k8s-starterkit/k8s

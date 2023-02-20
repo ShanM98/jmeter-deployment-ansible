@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jmeter-k8s-starterkit">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jmeter-k8s-starterkit.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

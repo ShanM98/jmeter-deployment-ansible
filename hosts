@@ -1,0 +1,4 @@
+#This is the hosts used for jmeter deployment, ad your hosts here.
+
+[jmeter]
+localhost

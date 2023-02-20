@@ -7,4 +7,5 @@
         dest: .
         remote_src: True
     - name: Deploying Jmeter K8s Objects
-      shell: kubectl create -R -f ./jmeter-k8s-starterkit/k8s
+      shell: kubectl delete -R -f ./jmeter-k8s-starterkit/k8s
+~                                                    
